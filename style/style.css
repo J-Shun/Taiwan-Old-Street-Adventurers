@@ -4,17 +4,21 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    width: 100%;
-    height: 100vh;
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 4rem;
+    padding: 2rem 0;
 }
 
 h2 {
     font-size: 30px;
+    text-align: center;
 }
 
 h3 {
@@ -30,10 +34,11 @@ p {
 .header {
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 4rem;
     top: 0;
     left: 0;
-    padding: 10px 15px;
+    padding: 10px 50px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,15 +53,20 @@ p {
     color: #fff;
 }
 
-.header ul {
+nav {
     display: flex;
     gap: 2rem;
 }
 
-.header ul a {
+nav a {
     font-size: 22px;
     text-decoration: none;
     color: #fff;
+    transition: all .3s;
+}
+
+nav a:hover {
+    color: #ccc;
 }
 
 /* about */
@@ -64,15 +74,14 @@ p {
 .about {
     display: flex;
     align-items: center;
-    padding-top: 100px;
-    height: 100vh;
+    padding-top: 4rem;
 }
 
 .about .info {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 0px 90px;
+    padding: 2rem 3rem;
 
 }
 
@@ -86,17 +95,26 @@ p {
     color: #fff;
     font-size: 18px;
     text-decoration: none;
+    transition: all .3s;
+}
+
+.info a:hover {
+    background-color: #333;
+}
+
+.info h2 {
+    text-align: left;
 }
 
 .about .info-img {
-    height: 100%;
+    height: 80vh;
     flex: 1;
     padding: 30px 40px;
     overflow: hidden;
 }
 
 .info-img .img {
-    background-image: url(/imgs/sunset.jpg);
+    background-image: url(/imgs/taiwan.jpg);
     background-size: cover;
     background-position: center right;
     height: 100%;
@@ -109,21 +127,20 @@ p {
 /* member */
 
 .member {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    /* padding: 2rem 0; */
+    background-color: #eee;
 }
 
 .member h2 {
+    text-align: center;
     margin-bottom: 2rem;
 }
 
 .cards {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
     width: 100%;
 }
 
@@ -132,9 +149,7 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 1rem 2rem;
-    margin: 0px 100px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card .img-container {
@@ -179,14 +194,107 @@ p {
 
 /* place */
 
-.place {
+.place h2 {
+    margin-bottom: 2rem;
+}
+
+.spots {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.spot {
+    display: flex;
+    flex-direction: column;
+}
+
+.place-img-container {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.place-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.tamsui {
+    background-image: url(/imgs/tamsui.jpg);
+}
+
+.sunset {
+    background-image: url(/imgs/sunset.jpg);
+}
+
+.spot p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.motto {
+    font-size: 30px;
+    text-align: center;
+    padding: 2rem 0;
+    color: #aaa;
+}
+
+.motto:hover {
+    color: #333;
+}
+
+/* contact */
+
+.contact {
+    background-color: #eee;
+}
+
+.contact h2 {
+    margin-bottom: 2rem;
+}
+
+.contact-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    max-width: 700px;
+    padding: 0 10px;
+    margin: auto;
 }
 
+.contact-container p {
+    text-align: center;
+}
 
-/* contact */
+.contact-container a {
+    padding: 10px 15px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: rgb(49, 153, 90);
+    color: #fff;;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.contact-container a:hover {
+    background-color: #333;
+}
+
+/* footer */
+
+footer {
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background-color: rgb(92, 187, 131);
+    color: #fff;
+
+}
