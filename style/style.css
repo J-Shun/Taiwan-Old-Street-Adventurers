@@ -278,20 +278,6 @@ nav a:hover {
     text-align: center;
 }
 
-.contact-container a {
-    padding: 10px 15px;
-    margin-top: 2rem;
-    border-radius: 10px;
-    background-color: rgb(49, 153, 90);
-    color: #fff;;
-    text-decoration: none;
-    transition: all .3s;
-}
-
-.contact-container a:hover {
-    background-color: #333;
-}
-
 /* footer */
 
 footer {
