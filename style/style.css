@@ -114,7 +114,7 @@ nav a:hover {
 }
 
 .info-img .img {
-    background-image: url(../imgs/taiwan.jpg);
+    background-image: url(../imgs/higher.jpg);
     background-size: cover;
     background-position: center right;
     height: 100%;
@@ -177,15 +177,19 @@ nav a:hover {
 }
 
 .img-container .member1 {
-    background-image: url(../imgs/johnny.jpg);
+    background-image: url(../imgs/normal_johnny.jpg);
 }
 
 .img-container .member2 {
-    background-image: url(../imgs/tatsu.jpg);
+    background-image: url(../imgs/tatsutarou.jpg);
 }
 
 .img-container .member3 {
-    background-image: url(../imgs/shun.jpg);
+    background-image: url(../imgs/shunsuke.jpg);
+}
+
+.img-container .member4 {
+    background-image: url(../imgs/yawen.jpg);
 }
 
 .card:hover .img {
