@@ -128,7 +128,6 @@ nav a:hover {
 .member {
     width: 100%;
     background-color: #eee;
-    /* min-height: 100vh; */
 }
 
 .member h2 {
@@ -151,7 +150,6 @@ nav a:hover {
     align-items: center;
     background-color: #fff;
     backdrop-filter: blur(25px);
-    border: 1px solid #ccc;
     border-radius: 10px;
     cursor: pointer;
 }
