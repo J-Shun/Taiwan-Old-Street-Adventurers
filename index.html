@@ -7,6 +7,8 @@
     <title>Taiwan Spot Adventurers</title>
     <link rel="stylesheet" href="./style/twicon.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="./app.js" defer></script>
 </head>
 <body>
 
@@ -17,14 +19,14 @@
         <nav>
             <a href="#about">About</a>
             <a href="#member">Member</a>
-            <a href="#place">Place</a>
+            <a href="#memory">Memory</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section id="about" class="about">
         <div class="info">
-            <h2>Taiwan Spot Adventurers (TSA)</h2>
+            <h2>Taiwan Spots Adventurers (TSA)</h2>
             <p>We are adventurers who want to go around and find out the beauty of Taiwan. We play together, laugh together, and explore together.</p>
             <a href="#member">See the members</a>
         </div>
@@ -72,22 +74,24 @@
         </div>
     </section>
 
-    <section id="place" class="place">
-        <h2>The places we visited</h2>
+    <section id="memory" class="memory">
+        <h2>Our Memory</h2>
 
-        <div class="spots">
-            <div class="spot">
-                <div class="place-img-container">
-                    <div class="place-img tamsui"></div>
+        <div class="album">
+            <div class="album-card">
+                <div class="memory-img-container">
+                    <img src="./imgs/zoo_assemble.jpg" alt="TSA at zoo" id="memory-img">
                 </div>
-                <p>Alley, Tamsui old street</p>
+                <p id="memory-info">TSA at zoo, Muzha Zoo</p>
             </div>
 
-            <div class="spot">
-                <div class="place-img-container">
-                    <div class="place-img sunset"></div>
-                </div>
-                <p>Sunset, Tamsui Fisherman's Wharf</p>
+            <div class="button-container">
+                <button class="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
 
@@ -98,9 +102,6 @@
         <h2>Want to contact us?</h2>
         <p>You can support us or leave a message</p>
         <div class="contact-container">
-            <!-- <div class="contact-img-container">
-                <img src="./imgs/zoo_assemble.jpg" alt="">
-            </div> -->
             <form action="#" class="contact-from">
                 <label for="form-name">Your name</label>
                 <input type="text" name="user-name" id="form-name" placeholder="Your Name...">

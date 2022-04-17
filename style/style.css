@@ -126,6 +126,7 @@ nav a:hover {
 /* member */
 
 .member {
+    width: 100%;
     background-color: #eee;
     /* min-height: 100vh; */
 }
@@ -146,8 +147,10 @@ nav a:hover {
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 1rem 2rem;
+    align-items: center;
+    background-color: #fff;
+    backdrop-filter: blur(25px);
     border: 1px solid #ccc;
     border-radius: 10px;
     cursor: pointer;
@@ -199,60 +202,75 @@ nav a:hover {
     opacity: 1;
 }
 
-/* place */
+/* memory */
 
-.place {
-    /* min-height: 100vh; */
+.memory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.place h2 {
+.memory h2 {
     margin-bottom: 2rem;
 }
 
-.spots {
+.album {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
 }
 
-.spot {
+.album-card {
     display: flex;
     flex-direction: column;
 }
 
-.place-img-container {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
+.memory-img-container {
+    width: 600px;
+    height: 400px;
+    border: 5px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
 }
 
-.place-img {
+.memory-img-container img {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center center;
+    object-fit: cover;
 }
 
-.tamsui {
-    background-image: url(../imgs/tamsui.jpg);
-}
-
-.sunset {
-    background-image: url(../imgs/sunset.jpg);
-}
-
-.spot p {
+.album-card p {
     text-align: center;
-    font-size: 12px;
+    font-size: 22px;
     font-weight: bold;
     margin: 10px 0;
 }
 
+.button-container {
+    display: flex;
+    gap: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prev-btn,
+.next-btn {
+  color: rgb(92, 187, 131);
+  font-size: 4rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: color .3s;
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: #ccc;
+}
+
 .motto {
     font-size: 30px;
-    text-align: center;
     margin: 2rem 0;
     color: #aaa;
 }
@@ -314,6 +332,10 @@ nav a:hover {
     text-decoration: none;
     cursor: pointer;
     transition: all .3s;
+}
+
+.contact-from input:focus, textarea:focus {
+    outline: none;
 }
 
 .contact-from input[type=submit]:hover {
